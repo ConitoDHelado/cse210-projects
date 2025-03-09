@@ -9,34 +9,34 @@ class Program
         string gradePercentage = Console.ReadLine();
         int grade = int.Parse(gradePercentage);
 
-        char gradeLetter;
+        char letter;
 
         if (grade >= 90)
         {
-            gradeLetter = 'A';
+            letter = 'A';
         }
 
         else if (grade >= 80)
         {
-            gradeLetter = 'B';
+            letter = 'B';
         }
 
         else if (grade >= 70)
         {
-            gradeLetter = 'C';
+            letter = 'C';
         }
 
         else if (grade >= 60)
         {
-            gradeLetter = 'D';
+            letter = 'D';
         }
 
         else
         {
-            gradeLetter = 'F';
+            letter = 'F';
         }
 
-        Console.WriteLine("Your grade is " + gradeLetter);
+        Console.WriteLine("Your grade is " + letter);
 
         if (grade >= 70)
         {
