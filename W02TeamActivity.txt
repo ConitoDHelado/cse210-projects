@@ -1,0 +1,43 @@
+What does the program do?
+- Gives user a prompt to write daily entries for Journal. 
+- Keeps asking until the user stops
+What user inputs does it have?
+- Date, Filename, Journal Entry
+- Load, Save from file (file name)
+What output does it produce?
+- Display the Journal
+- Provide a menu with options
+- Journal promps
+How does the program end?
+- User terminates the program
+- Prompt to save journal file 
+--------
+Class
+- Entry (date, prompt, _paragraph) [Display]
+- Journal (list of Entries)[save Journal, Load Journal, Add Entry, Display, Delete Entry]
+- Prompt (list of prompt)[randomPrompt method]
+
+--------
+CLASS: Entry
+Attributes:
+    * _date: string
+    * _prompt: string
+    * _paragraph: string
+Behaviours:
+    *DisplayEntry(): void
+--------
+CLASS: Journal
+Attributes:
+    * _entries: list<Entry>
+Behaviours:
+    *AddEntry(newEntry : Entry) : void
+    *DisplayAll() : void
+    *SaveToFile(file : string)
+    *LoadFromFile(file : string)
+--------
+CLASS: PromptGenerator
+Attributes:
+    * _prompts: List<string>
+Behaviours:
+    *GetRandomPromt(): string
+----------
