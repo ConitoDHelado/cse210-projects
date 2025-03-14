@@ -1,7 +1,7 @@
 // EXTRA CREDIT:
 // > Save other information in the journal entry. I added a weather category to the Entry
 // > I used the propmts.txt file to store the different prompts that will be given to the user. At the star of the program
-// the program is read and it populates the PromptGenerator _prompts list
+// the file is read and it populates the PromptGenerator _prompts list
 
 using System;
 using System.IO;
