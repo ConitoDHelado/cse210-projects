@@ -1,0 +1,49 @@
+Class: Word
+*Keeps track of the book, chapter, and verse information.
+Attributes:
+* _word : string
+* _visible : bool (true)
+
+Behaviours:
+* Word(text: string)
+
+* HideWord() : void
+* ShowWord() : void
+* IsHidden() : bool
+* DisplayText() : string
+
+-----------------
+Class: Reference
+*Keeps track of a single word and whether it is shown or hidden.
+Attributes
+Option 1
+* _book : string
+* _chapter : string
+* _verse : string
+
+Option 2
+* _book : int
+* _chapter : int
+* _verse : int
+* _endVerse : int  
+
+Behaviours
+* Reference(book: string, chapter: int, verse: int)
+* Reference(book: string, chapter: int, verse: int, endVerse:int)
+
+* DisplayText() : string
+-----------------
+Class: Scripture
+*Keeps track of both the reference and the text of the scripture. 
+*Can hide words and get the rendered display of the text. 
+Attributes:
+* _words : List<Word>
+* _reference : Reference
+Behaviours:
+* Scripture(Reference : reference, text : string)
+  needs to create a List<Word>
+
+* HideRandomWord (numberToHide : int) : void
+* DisplayText() : string
+* IsCompletelyHidden() : bool
+----------------
