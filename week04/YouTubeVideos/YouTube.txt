@@ -1,0 +1,25 @@
+Class: Video
+
+string _title;
+string _author;
+int _lenghtInSeconds;
+private List <Comment> _comments;
+
+public int CountComments();
+
+    int numberOfComments = CountComments.Count;
+    return numberOfComments;
+
+public void AddToComments(Comment comment)
+    _comments.Add(comment);
+
+________________
+Class: Comment
+
+string _name;
+string _text;
+________________
+
+Main
+
+Video.AddToComments(comment)

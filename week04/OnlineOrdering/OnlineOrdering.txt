@@ -1,0 +1,67 @@
+Class Product
+
+string _name
+string _productId
+float _price
+int _quantity
+
+public float TotalCost()
+      _quantity*_price
+_________________
+Class Customer
+
+string _name
+Address _address
+
+public bool isCostumerinUSA()
+    Address.isInUSA()
+
+public string getName
+
+
+_________________
+Address
+
+string _street
+string _city
+string _state
+string _country
+
+public bool isInUSA()
+
+    if USA 
+    return true
+
+public string GetFullAddress()
+
+    string fullAddress = $"{_address}\n{_city}\n{_state}\n{country}";
+    return fullAddress
+
+_________________
+Order
+List <Product> _products
+Customer _customer
+
+public float TotalCost()
+
+if isInUSA
+int shipping = 5
+else
+int shipping = 35
+
+foreach (Product product in _products)
+    float totalcost += product.cost()
+totalcost+=shipping
+
+
+public string PackingLabel()
+foreach product in product
+    string label+= product.id product.name \n
+
+
+public string ShippingLabel()
+
+    _customer.GetFullAddress()
+    _customer.GetName()
+
+_________________
