@@ -1,0 +1,62 @@
+PROGRAM: YouTubeVideos
+
+Class: Comment
+Attributes:
+* _name : string
+* _body : string
+
+Methods:
+* GetDisplayComment() : string
+=========
+Class: Video
+Attributes:
+* _title : string
+* _author: string
+* _lengthInSeconds : int
+* _comments : List<Comment>
+
+Methods:
+* AddToComments(Comment) : void
+* GetNumberOfComments() : int
+* DisplayVideoData() : void
+=========
+
+PROGRAM: OnlineOrdering
+
+Class: Product
+Attributes:
+* _name : string
+* _id : string
+* _price : double
+* _quantity : double
+
+Methods:
+GetNameId() : string
+GetTotalCost() : double
+=========
+Class: Address
+Attributes:
+* _ street : string
+* _city : string
+* _state : string
+* _country : string
+
+Methods:
+* IsInUSA() : bool
+* GetFullAddress() : string
+=========
+
+Class: Customer
+Attributes
+* _name : string
+* _address : Address
+
+Methods:
+* IsInUSA() : bool
+* GetShippingLabel() : string
+
+Class: Order
+Attributes
+* _customer : Customer
+* _products : List<Product>
+* _shipping : double

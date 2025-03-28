@@ -2,7 +2,7 @@ public class Order
 {
     private Customer _customer;
     private List<Product> _products = new List<Product>();
-    private float _shipping;
+    private double _shipping;
 
     public Order(Customer customer)
     {
