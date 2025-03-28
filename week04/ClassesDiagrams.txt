@@ -56,7 +56,12 @@ Methods:
 * GetShippingLabel() : string
 
 Class: Order
-Attributes
+Attributes:
 * _customer : Customer
 * _products : List<Product>
 * _shipping : double
+
+Methods:
+* GetTotalCost() : double
+* GetPackingLabel() : List<string>
+* GetShippingLabel() : string
