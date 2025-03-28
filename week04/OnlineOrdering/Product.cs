@@ -2,14 +2,26 @@ public class Product
 {
     private string _name;
     private string _id;
-    private float _price;
-    private float _quantity;
+    private double _price;
+    private double _quantity;
 
-    public Product
-
-    public float TotalCost()
+    public Product(string name, string id, double price, double quantity)
     {
-        float total = _quantity * _price;
+        _name = name;
+        _id = id;
+        _price = price;
+        _quantity = quantity;
+    }
+
+    public string GetNameId()
+    {
+        string nameid = $"{_name}({_id})";
+        return nameid;
+    }
+
+    public double GetTotalCost()
+    {
+        double total = _quantity * _price;
         return total;
     }
 }
