@@ -1,0 +1,29 @@
+Classes:
+
+Activity
+ Attributes
+ Behaviours
+ *Display Start Message
+ *Display End Message
+ *Pause for n seconds
+ *Pause while showing a counter
+
+BreathingActivity
+ Attributes
+ Behaviours
+ *Run Activity
+
+ReflectingActivity
+ Attributes
+ Behaviours
+ *Run Activity
+ *Get Random Prompt
+ *Get Random Question
+ *Display the content
+
+ListingActivity
+ Attributes
+ Behaviours
+ *Run Activity
+ *Get Random Prompt
+ *Get List of responses
