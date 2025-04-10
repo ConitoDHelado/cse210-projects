@@ -1,0 +1,4 @@
+900
+SimpleGoal|Simple|This is a simple goal|0|True
+EternalGoal|Eternal|This is an eternal goal|100
+ChecklistGoal|Checklist|This is a checklist goal|600|500|3|3
