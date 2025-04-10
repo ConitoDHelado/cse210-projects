@@ -1,6 +1,8 @@
 using System;
 using System.Formats.Asn1;
-
+/// <summary>
+/// For showing creativity I made sure no repeated questions or prompts are shown to the user during any given session. The Constructor uses setters to populate the lists. The program randomly chooses a question or prompt from a list. Then they remove it. If the list empties (AKA list.Count == 0) then the setter is used again to repopulate them. The Listing activity uses this for its prompts and the Reflecting Activity uses it for both the prompts and questions.
+/// </summary>
 class Program
 {
     static void Main(string[] args)

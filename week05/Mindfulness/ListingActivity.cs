@@ -7,13 +7,7 @@ public class ListingActivity : Activity
     {
         _name = "Listing Activity";
         _description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area";
-
-        // Prompts for the activiy.
-        _prompts.Add("Who are people that you appreciate?");
-        _prompts.Add("What are personal strengths of yours?");
-        _prompts.Add("Who are people that you have helped this week?");
-        _prompts.Add("When have you felt the Holy Ghost this month?");
-        _prompts.Add("Who are some of your personal heroes?");
+        SetPrompts();
     }
 
     public void Run()
@@ -33,9 +27,17 @@ public class ListingActivity : Activity
 
     public string GetRandomPrompt()
     {
+        if (_prompts.Count == 0)
+        {
+            SetPrompts();
+        }
+
         Random randomGenerator = new Random();
         int randomNumber = randomGenerator.Next(0, _prompts.Count);
-        return _prompts[randomNumber];
+
+        string prompt = _prompts[randomNumber];
+        _prompts.RemoveAt(randomNumber);
+        return prompt;
     }
 
     public void DisplayPrompt()
@@ -59,6 +61,14 @@ public class ListingActivity : Activity
         }
 
         _count = answers.Count();
+    }
+    private void SetPrompts()
+    {
+        _prompts.Add("Who are people that you appreciate?");
+        _prompts.Add("What are personal strengths of yours?");
+        _prompts.Add("Who are people that you have helped this week?");
+        _prompts.Add("When have you felt the Holy Ghost this month?");
+        _prompts.Add("Who are some of your personal heroes?");
     }
 
 
