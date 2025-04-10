@@ -4,12 +4,13 @@ public class GoalManager
 {
     private List<Goal> _goals = new List<Goal>();
     private int _score = 0;
-
+    private int _level;
     public void Start()
     {
         string answer = "";
         while (answer != "6")
         {
+            SetLevel();
             Console.WriteLine();
             DisplayPlayerInfo();
             Console.WriteLine();
@@ -60,9 +61,23 @@ public class GoalManager
         }
 
     }
+    public void SetLevel()
+    {
+        if (_score < 1000)
+        {
+            _level = 1;
+        }
+        else
+        {
+            double scoreToLevelUp = 1000 + (_level - 1) * 1100;
+            _level = (int)Math.Ceiling(_score / scoreToLevelUp);
+        }
+
+    }
     public void DisplayPlayerInfo()
     {
         Console.WriteLine($"You have {_score} points");
+        Console.WriteLine($"Your current level is {_level}");
     }
 
     public void ListGoalNames()
